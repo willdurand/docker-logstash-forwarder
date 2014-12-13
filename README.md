@@ -12,7 +12,8 @@ In order to use this image, you MUST [create an SSL
 certificate](https://github.com/elasticsearch/logstash-forwarder#generating-an-ssl-certificate),
 and [configure Logstash
 Forwarder](https://github.com/elasticsearch/logstash-forwarder#configuring)
-using a `config.json` file.
+using a `config.json` file. This configuration file MUST be named `config.json`
+and MUST be located in `/etc/logstash-forwarder`.
 
 ### SSL Certificate
 
