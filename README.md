@@ -56,7 +56,7 @@ Usage
 
 Let's say your `selfsigned.{crt,key}` files are located in
 `/path/to/your/ssl/files`, and your `config.json` file is in
-`/path/yo/your/config/file`.
+`/path/to/your/config/file`.
 
 You can start forwarding nginx logs to your `logstash` server by running the
 following command:
@@ -64,7 +64,7 @@ following command:
 ```
 $ docker run \
     --volume /path/to/your/ssl/files:/etc/ssl \
-    --volume /path/yo/your/config/file:/etc/logstash-forwarder \
+    --volume /path/to/your/config/file:/etc/logstash-forwarder \
     --volume /var/log/nginx:/var/log/nginx \
     willdurand/logstash-forwarder
 ```
@@ -76,7 +76,7 @@ as a volume. A better approach would be to use a _data-only container_ with a
 ```
 $ docker run \
     --volume /path/to/your/ssl/files:/etc/ssl \
-    --volume /path/yo/your/config/file:/etc/logstash-forwarder \
+    --volume /path/to/your/config/file:/etc/logstash-forwarder \
     --volume-from logs \
     willdurand/logstash-forwarder
 ```
@@ -88,7 +88,7 @@ logstashforwarder:
   image: willdurand/logstash-forwarder
   volumes:
     - /path/to/your/ssl/files:/etc/ss
-    - /path/yo/your/config/file:/etc/logstash-forwarder
+    - /path/to/your/config/file:/etc/logstash-forwarder
   volumes_from:
     - logs
 
