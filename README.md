@@ -98,3 +98,11 @@ logs:
   volumes:
     - /var/log/nginx
 ```
+
+
+Extend It
+---------
+
+One of the Docker best practices is to avoid mapping a host folder to a
+container volume. Instead of specifying a volume, it is recommended to use this
+image as base image and configure your own image.
