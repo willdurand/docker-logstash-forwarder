@@ -88,7 +88,7 @@ $ docker run \
 logstashforwarder:
   image: willdurand/logstash-forwarder
   volumes:
-    - /path/to/your/ssl/files:/etc/ss
+    - /path/to/your/ssl/files:/etc/ssl
     - /path/to/your/config/file:/etc/logstash-forwarder
   volumes_from:
     - logs
