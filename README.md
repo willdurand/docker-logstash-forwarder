@@ -82,7 +82,7 @@ $ docker run \
     willdurand/logstash-forwarder
 ```
 
-## Using Fig
+## Using Docker Compose
 
 ``` yaml
 logstashforwarder:
