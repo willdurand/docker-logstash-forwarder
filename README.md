@@ -20,11 +20,11 @@ and MUST be located in `/etc/logstash-forwarder`.
 If you want to generate self-signed SSL certificates and use an IP address
 rather than a DNS record to point to your `logstash` server(s), then you SHOULD
 use this
-[lc-tlscert](https://github.com/driskell/log-courier/blob/develop/src/lc-tlscert/lc-tlscert.go)
+[lc-tlscert](https://github.com/driskell/log-courier/blob/master/src/lc-tlscert/lc-tlscert.go)
 tool:
 
 ```
-$ wget https://raw.githubusercontent.com/driskell/log-courier/develop/src/lc-tlscert/lc-tlscert.go
+$ wget https://raw.githubusercontent.com/driskell/log-courier/master/src/lc-tlscert/lc-tlscert.go
 $ go run lc-tlscert.go
 ```
 
